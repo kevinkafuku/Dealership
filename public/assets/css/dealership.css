@@ -1,0 +1,40 @@
+img {
+    margin-top: 10px;
+}
+
+body {
+    background-image: url("../images/cars.jpg");
+}
+
+.carstodrive {
+    color: white;
+    background-image: url("../images/red.jpg");
+}
+
+h1 {
+    font-family: 'Bungee Outline', cursive;
+}
+
+.carsdriven {
+    color: white;
+    background-image: url("../images/green.jpg");
+}
+
+h2 {
+    font-family: 'Bungee Inline', cursive;
+    background-color: white;
+    border:  white solid 1px;
+    border-radius: 25px;
+}
+
+#vehicle {
+    font-family: 'Bungee Inline', cursive;
+}
+h3 {
+    font-family: 'Bungee Outline', cursive;  
+}
+
+#addVehicle {
+    margin-top: 25px;
+    padding: 15px;
+}
