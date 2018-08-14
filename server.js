@@ -9,7 +9,7 @@ var methodOverride = require('method-override');
 var app = express();
 
 // Connecting to the public directory to access public files
-app.use(express.static(path.join(__dirname, './delaership/public')))
+app.use(express.static(path.join(__dirname, './public')))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));

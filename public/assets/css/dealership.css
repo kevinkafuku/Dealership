@@ -11,6 +11,16 @@ body {
     background-image: url("../images/red.jpg");
 }
 
+.header {
+    color: green;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.header2 {
+    color: gold;
+    font-family: 'Bungee Inline', cursive;
+}
+
 h1 {
     font-family: 'Bungee Outline', cursive;
 }
@@ -25,6 +35,12 @@ h2 {
     background-color: white;
     border:  white solid 1px;
     border-radius: 25px;
+}
+
+.vehicle {
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    font-size: 18px;
 }
 
 #vehicle {

@@ -5,14 +5,14 @@
 
         <div class="col-md-12 text-center">
 
-            <img src="public/assets/images/huracan.png" width="200" height="200" /> 
+            <img src="assets/images/huracan.png" width="500" height="200" /> 
         </div>
 
     </div>
     <br>
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1>KEV'S DROP TOP SHOP</h1>
+            <h1 class="header">KEV'S DROP TOP SHOP</h1>
         </div>
     </div>
     <br>
@@ -40,10 +40,10 @@
         <div class="col-md-6 text-center">
 
             <h2>Here are some of the sweet rides you've driven, let us know when you're ready to take one home !</h2>
-
-            <ul class="list-group carsdriven">
+            <br>
+            <ul class="list-group">
                 {{#each vehicles}} {{#if this.driven}}
-                <li class="list-group-item">
+                <li class="list-group-item carsdriven">
                     <h3>
                         {{this.vehicle_name}}
                         <form action="vehicles/delete/{{this.id}}?_method=DELETE" method="POST">
@@ -61,14 +61,14 @@
     <div class="row">
         <div class="col-md-12 text-center" id="addVehcile">
             <br>
-            <h1>Add Your Own Ride</h1>
+            <h1 class="header2">Add Your Own Ride</h1>
             <form class="create-update-form" action="vehicles/create" method="POST">
 
-                <div class="form-group">
-                    <label for="record">Vehicle Name:</label>
+                <div class="form-group vehicle">
+                    <label for="vehicle">Vehicle Name:  </label>
                     <input type="text" id="vehicle" name="name">
                 </div>
-                <button type="submit" class="btn float-center btn-small btn-primary">Add This Ride <i class="fas fa-cart-plus"></i></button>
+                <button type="submit" class="btn float-center btn-small btn-primary vehicle">Add This Ride <i class="fas fa-cart-plus"></i></button>
                 <br>
                 <br>
             </form>
